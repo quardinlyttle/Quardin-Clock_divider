@@ -18,5 +18,7 @@ module clock_divider(
     clk_div16 <= ~clk_div16;
   always @(posedge clk_div16)
     clk_div32 <= ~clk_div32;
+
+
 endmodule
   

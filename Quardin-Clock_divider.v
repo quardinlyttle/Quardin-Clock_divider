@@ -14,6 +14,8 @@ module clock_divider(
     clk_div4 <= ~clk_div4;
   always @(posedge clk_div4)
     clk_div8 <= ~clk_div8;
+`include "ClockDividerRedo.v"
+
   always @(posedge clk_div8)
     clk_div16 <= ~clk_div16;
   always @(posedge clk_div16)
